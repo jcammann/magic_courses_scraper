@@ -9,4 +9,6 @@ Replace email, pw (if you don't want to type it manually), semester and courses 
 
 reload_all determines if existing files are downloaded again.
 
-no warranty for anything
+I am aware this is a mess, feel free to improve it.
+
+no warranties

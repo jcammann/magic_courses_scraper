@@ -64,13 +64,4 @@ for course in courses:
                     print("Downloading: ", folder+"/"+filename, " from: ",
                           link.absolute_url)
                     br.retrieve(link.absolute_url, folder+"/"+filename)
-        # key = "?recordingId="
-        # if download_videos and link.url[:len(key)] == key:
-        #     print(link.absolute_url)
-        #     br.open(link.absolute_url)
-        #     vid_links = br.links()
-        #     for vid_link in vid_links:
-        #         if "recordings" in vid_link.absolute_url:
-        #             print(vid_link)
-        #     print()
     print()
