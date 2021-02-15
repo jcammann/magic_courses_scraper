@@ -8,7 +8,7 @@ email = "j.cammann@lboro.ac.uk"
 pw = ""
 semester = "2020-2021"
 courses = ["magic099", "magic014", "magic102"]
-reload_all = True
+reload_all = False
 
 
 print("email: ", email)
