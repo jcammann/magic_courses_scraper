@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import mechanize
 import http.cookiejar
 import os
