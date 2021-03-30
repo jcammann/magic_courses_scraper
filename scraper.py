@@ -61,6 +61,7 @@ for course in courses:
                 cd = info.get('Content-Disposition')
                 key = "attachment; filename="
                 filename = cd[len(key):]
+                filename = filename.strip('"')
                 # print(filename)
                 if reload_all or not os.path.isfile(folder+"/"+filename):
                     print("Downloading: ", folder+"/"+filename, " from: ",
