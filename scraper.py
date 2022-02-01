@@ -8,8 +8,8 @@ from getpass import getpass
 
 email = "j.cammann@lboro.ac.uk"
 pw = ""
-semester = "2020-2021"
-courses = ["magic099", "magic014", "magic102"]
+semester = "2021-2022"
+courses = ["magic058", "magic091", "magic093"]
 reload_all = False
 
 
@@ -35,11 +35,12 @@ for course in courses:
     content = br.response().read()
     soup = BeautifulSoup(content, features="lxml")
     t = soup.find('title') #<td>My home address</td>
-    title = t.contents[0][1:] #My home address
+    title = t.contents[0][:] #My home address
     title = title.replace(" ","_")
-    remove_from_title_end = "_|__MAGIC_Maths"
+    # remove_from_title_end = "_|__MAGIC_Maths"
     remove_from_title_start = "MAGICXXX:_"
-    title = title[:-len(remove_from_title_end)]
+    # print(title)
+    # title = title[:-len(remove_from_title_end)]
     title = title[len(remove_from_title_start):]
     print(course,title)
 
